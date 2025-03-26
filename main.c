@@ -27,7 +27,7 @@ void cadastrarProduto(Produto *produto){
 void listarProdutos(Produto produtos[], int quantidade){
     for(int i =0; i<quantidade; i++){
         printf("\tO nome do produto %i e %s\n", i+1, produtos[i].nome);
-        printf("\tO preco do produto %i e %.2f\n", i+1, produtos[i].preco);
+        printf("\tO preco do produto %i e R$ %.2f\n", i+1, produtos[i].preco);
         printf("\tquantidade do produto %i e %i\n", i+1, produtos[i].quantidade);
         
     }
@@ -88,7 +88,7 @@ int main() {
                 } else {
                for(int i=0; i<totaldprodutos; i++){
               printf("Produto %i: %s\n", i+1, produtos[i].nome);
-              printf("Preco : %.2f\n", produtos[i].preco);
+              printf("Preco :R$ %.2f\n", produtos[i].preco);
              
                 }
                 printf("\tde 1 a %i\n", totaldprodutos);
